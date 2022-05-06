@@ -15,6 +15,7 @@
 		<h2 id="text">Moon Light</h2>
 	</section>
 
+
 	<script type="text/javascript">
 		let bg = document.getElementById("bg");
 		let moon = document.getElementById("moon");
@@ -25,7 +26,11 @@
 		window.addEventListener("scroll", function(){
 			var value = window.scrollY;
 
-			bg.style.top = value + "px";
+			bg.style.top = value * 0.5 + "px";
+			moon.style.left = -value * 0.5 + "px";
+			mountain.style.top = -value * 0.15 + "px";
+			road.style.top = value * 0.15 + "px";
+			text.style.top = value * 1 + "px";
 		})
 
 	</script>
